@@ -1,14 +1,18 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+fun addNumber(a: Int, b: Int, c: Int): Int {
+    return a + b + c
+}
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
+fun multiply(a: Int, b: Int, c: Int): Int {
+    return a * b * c
+}
+
+fun main() {
+    val a = 2
+    val b = 3
+    val c = 4
+    val sum = addNumber(a, b, c)
+    println("The sum of $a, $b, and $c is $sum")
+
+    val product = multiply(a, b, c)
+    println("The product of $a, $b, and $c is $product")
 }
